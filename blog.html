@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Stanford History Blog</title>
+<style>
+.all{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	
+}
+.titlebar{
+
+	grid-column: 1 / span 2; 
+	grid-row: 1; 
+}
+.main{
+	grid-column: 1 / span 2; 
+	grid-row: 2;
+}
+
+#titleText{
+	width: 100%;
+	float: left;
+	background-color: #9A0000;
+	color: white;
+	font-size: 26px;
+}
+
+.entrytitle{
+	float: left;
+	padding-top:5px;
+	padding-right:5px;
+	padding-left:5px;
+	background-color: #9A0000;
+	color: white;
+
+}
+
+.entrycontents{
+	border-top: 4px dotted black;
+	border-bottom: 4px dotted black;
+	padding-bottom: 5px;
+	text-align: left;
+	float: left;
+}
+.image::after{
+	content: url(tree-logo2.gif);
+	justify-content: center;
+	margin-top: 5px;
+	padding-left: 5px;
+}
+.entrydate{
+	color: blue;
+}
+.entryfooter{
+	font-weight: bold;
+	font-style: italic;
+}
+img{
+	float:right;
+}
+
+</style>
+</head>
+
+<body>
+<div id="all">
+
+<div class="titlebar">
+<div id="titleText">
+<img src="tree-logo.gif" alt="stanford"><h1>Stanford History Blog</h1></div>
+
+</div>
+
+<div id="main">
+
+  <div class="entry">
+    <div class="entryheading">
+      <h2 class="entrytitle">Leland Stanford Purchases <span class="image">Land</span></h2>
+    </div>
+	<div class="entrycontents"> <div class="entrydate">1876</div><br>
+	Leland Stanford purchases 650 acres of land for a stock farm for his
+	horses.  This farm will become the core of Stanford University campus.  Future purchases 
+	by Leland Stanford will add to the property, leading to over 8000 acres total.<br><br><span class="entryfooter">Leland Stanford, Campus</span></div>
+  </div>
+  
+   <div class="entry">
+    <div class="entryheading">
+      <h2 class="entrytitle">University Established</h2>
+    </div>
+	<div class="entrycontents"><div class="entrydate">1891</div><br>Stanford University is established.  The first class has 559 men and women.
+	There are 15 faculty members the first year, with 49 by the second year.  Frederick Law Olmsted,
+	the architect for New York's Central Park, designs the Stanford campus. <br><br> <span class="entryfooter">Statistics </span></div>
+
+  </div>
+  
+   <div class="entry-last">
+    <div class="entryheading">
+      <h2 class="entrytitle">Earthquake Devastates Campus</h2>
+    </div>
+	<div class="entrycontents"><div class="entrydate">1906</div><br>The great San Francisco Earthquake of 1906 devastates the campus,
+	permanently changing Stanford's architectural character.  An archway over the entrance to the
+	quad is destroyed.  The church is badly damaged and its bell tower is destroyed.  See 
+	<a href="http://quake06.stanford.edu/centennial/index.html">the Stanford University 
+	and the 1906 Earthquake</a> for photographs and additional information.
+	<br><br>  <span class="entryfooter">Campus, Disasters</span>
+	</div>
+	
+  </div>
+ 
+</div> <!-- main -->
+
+</div> <!-- all -->
+</body>
+</html>

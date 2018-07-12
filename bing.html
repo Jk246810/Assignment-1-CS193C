@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Bing</title>
+<style>
+@media only screen and (max-width: 650px) {
+	
+	.editionLarge{
+		display: hidden;
+		font-size: 0pt; 
+	}
+
+	h1{
+		font-size: 26pt;
+		width: 100%;
+	}
+	img{
+	width: 100%;
+	}
+	#about{
+	grid-column: 1/ span 2;
+	grid-row: 2;
+	}
+	#calendar{
+	grid-column: 1/ span 2;
+	grid-row: 3;
+	}
+}
+@media only screen and (min-width: 650px){
+	.editionLarge{
+		display: none;
+		font-size: 0pt; 
+	}
+	.edition{
+		width: 100%;
+	}
+
+	h1{
+		font-size: 32pt;
+		width: 100%;
+	}
+
+	img{
+	float: left;
+	width: 50%;
+	padding-top: 5px;
+	}
+	#about{
+	grid-column: 1/ span 2;
+	grid-row: 2;
+	}
+	#calendar{
+	grid-column: 1/ span 2;
+	grid-row: 3;
+	
+	}
+}
+@media only screen and (min-width: 815px) {
+	
+	h1{
+		font-size: 32pt;
+		width: 60%;
+	}
+
+	.editionLarge{
+		display: contents;
+		margin: 0px;
+		width: 10%;
+		text-align: right;
+		color: #cc0000;
+		font-size: 10pt;
+		font-weight: bold;
+	}
+	.edition{
+		display: none;
+	}
+	img{
+	float: left;
+	width: 70%;
+	padding-top: 5px;
+	margin: 0px;
+	}
+	#about{
+	grid-column: 1;
+	grid-row: 2;
+
+	}
+	#calendar{
+	grid-column: 2;
+	grid-row: 2;
+	
+	}
+}
+
+
+body {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+
+}
+#title{
+	grid-column: 1/ span 2;
+	grid-row: 1;
+
+}
+
+
+#heading1{
+	margin-top: 10px;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+
+#heading2{
+	font-size: 14pt;
+	font-weight: bold;
+	margin-top: 12px;
+	padding-left: 5px
+
+}
+#calendarItems{
+	font-size: 12pt;
+	font-style: italic;
+	padding-left: 5px
+
+}
+.info{
+	border-top: 2px solid black;
+	padding: 5px;
+}
+.infoLast{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 5px;
+}
+
+h1{
+	float: left;
+	margin: 0px;
+	color: #cc0000;
+	font-weight: bold;
+}
+h2{
+	margin: 0px;
+}
+.edition{
+	text-align: left;
+	margin: 0px;
+	width: auto;
+	color: #cc0000;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+
+</style>
+</head>
+<body>
+	<div id="title">
+		<div>
+		<div class ="titleText">
+			<h1>Stanford Performing Arts</h1>
+		</div> 
+			<div class = "editionLarge">
+				<h3 >Audition 2012 <br>edition</h3>
+			</div>
+		</div>
+		<div class = "edition">
+			<h3>Audition 2012 edition</h3>
+		</div>
+		
+			
+	</div>
+	
+
+	<div id="about">
+		<h2 id="heading1">Bing Concert Hall</h2>
+		<div>
+		<img class="image" src="bing.jpg" alt="">
+		<p>The Bing Concert Hall at Stanford will play a vital role on campus and in the local community. The hall's exceptional acoustics and state-of-the-art technical capabilities will showcase the world's finest performers.<br><br>
+		The hall is scheduled to open early in 2013. The concert hall will have 844 seats in an intimate vineyard-style configuration, with terraced sections wrapping all the way around the stage.</p>
+		
+		</div>
+	</div>
+	<div id="calendar">
+		<h2 id="heading2">Calendar</h2>
+		<div id="calendarItems">
+		<p>
+		<div class="info">Harmony for Humanity: Daniel Pearl World Music Concert</div>
+		<div class="info">Sundays with the St. Lawrence String Quartet</div>
+		<div class="info">Merce Cunningham Dance Company</div>
+		<div class="infoLast">Juilliard String Quartet</div>
+		</p>
+		</div>
+	</div>
+</body>
+</html>

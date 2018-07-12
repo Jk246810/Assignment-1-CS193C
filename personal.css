@@ -1,0 +1,17 @@
+.stanfordStyle{
+	color: red;
+}
+h1{
+	text-align: center; 
+}
+
+a:hover{
+	color: green;
+}
+.profile{
+	height: 316px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: -104px;
+}
+

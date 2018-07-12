@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Stanford Connection</title>
+<style>
+	.mainGrid{
+		display: grid;
+
+		grid-template-areas: 'header header header header header header menu menu menu menu'
+							'left main main main main main menu menu menu menu'
+							'left main main main main main menu menu menu menu'
+							'left main main main main main menu menu menu menu';
+		overflow: hidden;
+
+
+	}
+
+
+
+
+	#title{
+		grid-area: header;
+		font-size: 25px;
+		letter-spacing: 3px;
+		color: white;
+		margin: 7px;
+		background-color: #9A0000; 
+	}
+	#a{
+		float:left;
+		padding-left: 15%;
+	}
+
+	#b{
+		float: right;
+	}
+
+
+
+
+
+	#info{
+		grid-area: left;
+		margin: 7px;
+	}
+
+	#flexInfo{
+		display: flex;
+		flex-direction: column;
+
+	}
+	#flexInfo > img{
+		margin-bottom: 5px;
+	}
+
+	.headings{
+		font-weight: bold; 
+		background-color: #CC9191;
+		border-bottom: 2px solid black;
+		border-top: 2px solid black;
+		text-decoration-color: black;
+
+	}
+	.boldText{
+		font-weight: bold;
+	}
+
+
+
+
+	#updates{
+		grid-area: main;
+		padding-left: 10px;
+		
+	}
+	.separation{
+		border-top: 1px solid black;
+		padding: 15px;
+	}
+	
+
+
+
+	#post{
+		grid-area: menu;
+		margin-left: 7px;
+	}
+	#inputBox{
+		border: 1px solid gray;
+	}
+	#submitButton{
+		padding-top: 5px;
+		margin-top: 5px;
+	}
+
+</style>
+</head>
+<body>
+	<div class="mainGrid"> 
+	<div id="title">
+			<div id="a">
+				<h1>Stanford Connection</h1>
+			</div>
+
+			<div id="b">
+				<img src="tree-logo.gif" alt="stanford">
+			</div>
+		
+	</div>
+
+
+	<div id="info">
+		<div id="flexInfo">
+			
+			<img src="molly.jpg" alt="dog">
+			
+			<div class="headings">
+				<p>About Me</p>
+			</div>
+			<p><span class="boldText">Birthday</span>: December 8, 2001</p>
+			<div class="headings">
+				<p>Frinds</p>
+			</div>
+			<p class="boldText"> Patrick Young <br> Chloe Cox</p>
+			
+		</div>
+	</div>
+
+
+	<div id="updates">
+			<h1>Molly the FloPup</h1>
+			<p class="headings"><span id="sapcing">Status update</span></p>
+			<p class= "separation">When am I going to be fed?</p>
+			<p class= "separation">I want to go for a walk</p>
+			<p class= "separation">There's a squirrel on the patio, why won't Patrick let me out so I can chase it?</p>
+			<p class= "separation">I really like summer because I get to sun myself out on the patio</p>
+	</div>
+
+	<div id="post">
+		<p class="headings">Post Updates</p>
+		<div id="inputBox">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<div id="submitButton">
+			<button type="button" onclick="">Submit New Update</button>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
